@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lreom">
+    <title>Bagaimana Cara Kerja Internet?</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cara Kerja Internet</h1>
+      <nav>
+        <ul>
+          <li><a href="#umum">Cara Kerja Internet Secara Umum</a></li>
+          <li><a href="#http-https">HTTP dan HTTPS</a></li>
+          <li><a href="#domain">Nama Domain</a></li>
+          <li><a href="#hosting">Hosting</a></li>
+          <li><a href="#dns">DNS</a></li>
+          <li><a href="#browser">Browser</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="umum">
+      <h2>Bagaimana Cara Kerja Internet?</h2>
+      <p>
+        Internet bergantung pada dua konsep utama, yaitu
+        <strong>paket data</strong> dan <strong>protokol</strong>.
+      </p>
+
+      <h3>Paket Data</h3>
+      <p>
+        Paket adalah bagian kecil dari sebuah pesan yang lebih besar. Setiap
+        paket berisi data dan informasi dalam <strong>header</strong> untuk
+        memandu proses di tujuan. Data dipecah menjadi paket-paket kecil, yang
+        dikirim melalui perangkat jaringan seperti router dan switch, lalu
+        disusun kembali di perangkat penerima.
+      </p>
+      <ul>
+        <li>
+          <strong>Packet Switching:</strong> Paket diproses secara independen
+          untuk memastikan tidak ada satu koneksi yang mendominasi jaringan.
+        </li>
+        <li>
+          <strong>Keuntungan:</strong> Menghindari dominasi satu koneksi dan
+          mendukung banyak pengguna secara simultan.
+        </li>
+      </ul>
+
+      <h3>Protokol</h3>
+      <p>
+        Protokol adalah standar komunikasi yang memungkinkan perangkat dengan
+        perangkat keras dan perangkat lunak yang berbeda untuk berkomunikasi.
+        Beberapa protokol penting meliputi:
+      </p>
+      <ul>
+        <li><strong>Ethernet:</strong> Mengirim paket dalam jaringan lokal.</li>
+        <li>
+          <strong>IP (Internet Protocol):</strong> Mengirim paket antarjaringan.
+        </li>
+        <li>
+          <strong>TCP (Transmission Control Protocol):</strong> Menjamin paket
+          tiba dengan urutan yang benar.
+        </li>
+        <li>
+          <strong>HTTP (HyperText Transfer Protocol):</strong> Mengirim data
+          untuk web.
+        </li>
+      </ul>
+
+      <h3>Infrastruktur Fisik Internet</h3>
+      <p>
+        Berbagai infrastruktur fisik penting mendukung jalannya internet, antara
+        lain:
+      </p>
+      <ul>
+        <li>
+          <strong>Router:</strong> Mengarahkan paket antarjaringan, seperti
+          polisi lalu lintas.
+        </li>
+        <li>
+          <strong>Switch:</strong> Menghubungkan perangkat dalam satu jaringan
+          dan meneruskan paket ke perangkat yang benar.
+        </li>
+        <li>
+          <strong>Server Web:</strong> Menyimpan dan menyajikan konten seperti
+          halaman web, gambar, dan video. Server ini ditempatkan di pusat data
+          di seluruh dunia.
+        </li>
+      </ul>
+
+      <a
+        href="https://www.cloudflare.com/learning/network-layer/how-does-the-internet-work/"
+        target="_blank"
+        >Referensi</a
+      >
+    </section>
+
+    <section id="http-https">
+      <h2>Apa itu HTTP dan HTTPS?</h2>
+      <p>
+        HTTP (Hypertext Transfer Protocol) adalah protokol komunikasi yang
+        memungkinkan akses pengguna ke situs web yang berada di server. Namun,
+        HTTP tidak mengenkripsi data, sehingga rentan terhadap serangan
+        pencurian data.
+      </p>
+
+      <h3>HTTPS: Proteksi Lebih Aman</h3>
+      <p>
+        HTTPS (Hypertext Transfer Protocol Secure) merupakan versi aman dari
+        HTTP yang menambahkan lapisan enkripsi. HTTPS menjamin keamanan data
+        melalui:
+      </p>
+      <ul>
+        <li>
+          <strong>Autentikasi Server:</strong> Memastikan klien terhubung dengan
+          server yang benar.
+        </li>
+        <li>
+          <strong>Kerahasiaan Data:</strong> Melindungi data dari pencurian
+          pihak ketiga.
+        </li>
+        <li>
+          <strong>Integritas Data:</strong> Menjaga agar data tidak diubah oleh
+          pihak lain.
+        </li>
+      </ul>
+
+      <h3>Perbedaan Cara Kerja HTTP dan HTTPS</h3>
+      <p>
+        HTTP dan HTTPS memiliki prinsip dasar yang sama, tetapi berbeda dalam
+        hal keamanan data. Proses kerjanya meliputi:
+      </p>
+      <ul>
+        <li><strong>HTTP:</strong> Menggunakan port 80 tanpa enkripsi.</li>
+        <li>
+          <strong>HTTPS:</strong> Menggunakan port 443 dengan koneksi aman
+          melalui sertifikat SSL. Verifikasi dilakukan oleh pihak ketiga untuk
+          memastikan keamanan.
+        </li>
+      </ul>
+
+      <a
+        href="https://fastwork.id/blog/perbedaan-http-dan-https/"
+        target="_blank"
+        >Referensi</a
+      >
+    </section>
+
+    <section id="domain">
+      <h2>Apa Itu Domain?</h2>
+      <p>
+        Domain adalah alamat unik yang menjadi identitas website sehingga mudah
+        diakses oleh pengguna. Domain biasanya terdiri dari dua elemen utama,
+        yaitu nama situs dan ekstensi (misalnya,
+        <strong>Facebook.com</strong> terdiri dari nama "Facebook" dan ekstensi
+        ".com").
+      </p>
+
+      <h3>Fungsi Domain</h3>
+      <p>
+        Domain berfungsi sebagai pengganti alamat IP yang panjang dan sulit
+        diingat. Ini memudahkan pengguna untuk mengakses website dengan
+        mengetikkan alamatnya di kolom browser, tanpa harus mengingat
+        serangkaian angka.
+      </p>
+      <p>
+        Contoh: Alamat IP <strong>100.90.80.70</strong> akan lebih mudah diakses
+        dengan nama domain <strong>hostinger.co.id</strong>.
+      </p>
+
+      <h3>Jenis-Jenis Domain</h3>
+      <p>Domain memiliki beberapa jenis berdasarkan ekstensi, antara lain:</p>
+      <ul>
+        <li>
+          <strong>gTLD (Generic Top-Level Domain):</strong> Misalnya, .com,
+          .net, .org.
+        </li>
+        <li>
+          <strong>ccTLD (Country Code Top-Level Domain):</strong> Misalnya, .id,
+          .us, .uk.
+        </li>
+        <li>
+          <strong>sTLD (Sponsored Top-Level Domain):</strong> Misalnya, .edu,
+          .gov.
+        </li>
+      </ul>
+
+      <h3>Opsi Pengalihan (Redirect)</h3>
+      <p>
+        Domain juga dapat memanfaatkan pengalihan otomatis ke alamat lain untuk
+        berbagai keperluan, seperti kampanye atau halaman khusus. Misalnya,
+        pengalihan dari <strong>fb.com</strong> ke
+        <strong>facebook.com</strong> menghindari kesalahan penulisan URL.
+      </p>
+      <img
+        src="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2022/07/cara-kerja-domain.webp"
+        alt="ddwdwd"
+      />
+
+      <a href="https://www.hostinger.co.id/tutorial/apa-itu-domain/"
+        >Referensi</a
+      >
+    </section>
+
+    <section id="hosting">
+      <h2>Definisi dan Cara Kerja Hosting</h2>
+      <p>
+        Hosting adalah layanan yang menyediakan ruang penyimpanan data untuk
+        website di server. Server hosting bertanggung jawab menyimpan konten
+        seperti gambar, video, tulisan, dan skrip, serta melayani permintaan
+        akses pengguna.
+      </p>
+
+      <h3>Cara Kerja Hosting</h3>
+      <p>
+        Cara kerja hosting adalah menyediakan ruang penyimpanan khusus untuk
+        file dan data website. Saat pengguna mengetik alamat website, server
+        hosting menerima permintaan dari browser dan merespon dengan mengirimkan
+        data yang diminta.
+      </p>
+
+      <h3>Jenis-Jenis Hosting</h3>
+      <ul>
+        <li>
+          <strong>Shared Hosting:</strong> Server digunakan bersama oleh
+          beberapa website. Cocok untuk kebutuhan website skala kecil atau
+          pemula.
+        </li>
+        <li>
+          <strong>VPS Hosting:</strong> Menawarkan kontrol lebih besar dengan
+          ruang server khusus, meskipun berbagi server fisik dengan pengguna
+          lain.
+        </li>
+        <li>
+          <strong>Cloud Hosting:</strong> Menggunakan beberapa server virtual
+          untuk meningkatkan keandalan dan skalabilitas.
+        </li>
+        <li>
+          <strong>WordPress Hosting:</strong> Dioptimalkan khusus untuk platform
+          WordPress dengan fitur yang memudahkan pengelolaan.
+        </li>
+        <li>
+          <strong>Email Hosting:</strong> Dirancang untuk mengelola layanan
+          email dengan nama domain sendiri, meningkatkan profesionalitas.
+        </li>
+        <li>
+          <strong>Dedicated Hosting:</strong> Menawarkan server khusus untuk
+          satu pengguna saja, dengan performa dan kontrol maksimal.
+        </li>
+      </ul>
+
+      <a
+        href="https://www.domainesia.com/berita/apa-itu-hosting/#:~:text=Jenis%2C%20Fungsi%20dan%20Cara%20Kerjanya%21%201%20Pengertian%20Hosting,beberapa%20tipe%2C%20hosting%20juga%20memiliki%20beberapa%20jenis.%20"
+        >Referensi</a
+      >
+    </section>
+
+    <section id="dns">
+      <h2>Definisi dan Cara Kerja DNS</h2>
+      <p>
+        DNS (Domain Name System) adalah sistem yang mengubah URL suatu website
+        menjadi alamat IP untuk memudahkan akses. DNS menyimpan informasi domain
+        dalam basis data terdistribusi yang dapat diakses oleh pengguna
+        internet.
+      </p>
+
+      <h3>Fungsi DNS</h3>
+      <p>
+        DNS berfungsi menerjemahkan nama domain menjadi alamat IP sehingga
+        memudahkan komputer dalam mengidentifikasi alamat server. DNS juga
+        membuat website lebih konsisten meski alamat IP berubah.
+      </p>
+
+      <h3>Cara Kerja DNS</h3>
+      <ul>
+        <li>
+          <strong>Pengguna Mengakses Website:</strong> Pengguna mengetik alamat
+          website di browser, yang mengirim permintaan ke server DNS ISP.
+        </li>
+        <li>
+          <strong>Pencarian di Server DNS ISP:</strong> ISP mengecek informasi
+          IP di server DNS mereka, jika tersedia, permintaan diarahkan ke server
+          tujuan.
+        </li>
+        <li>
+          <strong>Pencarian di Root Zone Server:</strong> Jika informasi tidak
+          tersedia, permintaan diteruskan ke Root Zone Server.
+        </li>
+        <li>
+          <strong>Respons Root Zone:</strong> Root Zone mengembalikan informasi
+          IP yang kemudian diteruskan oleh ISP ke browser pengguna.
+        </li>
+      </ul>
+
+      <h3>Macam-Macam Tipe DNS</h3>
+      <ul>
+        <li>
+          <strong>A Record:</strong> Mengarahkan domain ke server menggunakan
+          IPv4.
+        </li>
+        <li>
+          <strong>AAAA Record:</strong> Mengarahkan domain ke server menggunakan
+          IPv6.
+        </li>
+        <li><strong>MX Record:</strong> Mengarahkan domain ke server email.</li>
+        <li>
+          <strong>CNAME Record:</strong> Menyediakan alias untuk
+          domain/subdomain lain.
+        </li>
+        <li>
+          <strong>NS Record:</strong> Menyimpan informasi server nama terkait
+          domain.
+        </li>
+        <li>
+          <strong>PTR Record:</strong> Memetakan IP Address menjadi subdomain.
+        </li>
+        <li>
+          <strong>TXT Record:</strong> Menyimpan informasi verifikasi data DNS.
+        </li>
+        <li>
+          <strong>SOA Record:</strong> Berisi informasi lengkap mengenai domain
+          otoritatif.
+        </li>
+      </ul>
+      <a href="https://www.rumahweb.com/journal/dns-adalah/">Referensi</a>
+    </section>
+
+    <section id="browser">
+      <h2>Definisi dan Cara Kerja Web Browser</h2>
+      <p>
+        Web browser adalah aplikasi yang digunakan untuk mengakses dan
+        menampilkan konten dari internet seperti halaman web, video, dan gambar.
+        Browser bekerja dengan mengonversi kode semantik seperti HTML, CSS, dan
+        JavaScript menjadi tampilan yang interaktif.
+      </p>
+
+      <h3>Cara Kerja Web Browser</h3>
+      <ul>
+        <li>
+          <strong>Resolusi DNS:</strong> Browser mengonversi nama domain menjadi
+          alamat IP untuk menemukan server.
+        </li>
+        <li>
+          <strong>Permintaan ke Server:</strong> Browser mengirimkan permintaan
+          HTTP/HTTPS ke server.
+        </li>
+        <li>
+          <strong>Server Merespons:</strong> Server mengirimkan file HTML, CSS,
+          dan JavaScript.
+        </li>
+        <li>
+          <strong>Rendering:</strong> Browser memproses dan merender halaman
+          dari file yang diterima.
+        </li>
+        <li>
+          <strong>Menampilkan Halaman:</strong> Hasil rendering ditampilkan di
+          layar pengguna.
+        </li>
+        <li>
+          <strong>Interaktivitas:</strong> Browser menangani aksi pengguna
+          seperti klik dan input teks.
+        </li>
+      </ul>
+
+      <h3>Fungsi Web Browser</h3>
+      <ul>
+        <li>
+          <strong>Mencari Informasi:</strong> Membantu pengguna mencari
+          informasi dan konten di internet.
+        </li>
+        <li>
+          <strong>Keamanan Web:</strong> Melakukan verifikasi untuk memastikan
+          situs web aman.
+        </li>
+        <li>
+          <strong>Menyimpan Data:</strong> Menyediakan fitur *history* dan
+          *bookmark* untuk menyimpan alamat situs.
+        </li>
+        <li>
+          <strong>Mendukung Mesin Pencari:</strong> Memungkinkan akses ke mesin
+          pencari seperti Google dan Bing.
+        </li>
+        <li>
+          <strong>Mengumpulkan Data:</strong> Menampilkan konten web dalam
+          berbagai format seperti teks, gambar, dan video.
+        </li>
+      </ul>
+      <a href="https://www.sekawanmedia.co.id/blog/web-browser-adalah/"
+        >Referensi</a
+      >
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2024 Cara Kerja Internet |
+        <a href="references/referensi.txt">Lihat Referensi</a>
+      </p>
+    </footer>
+  </body>
+</html>
